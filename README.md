@@ -1,1 +1,3 @@
-# POC-6
+# POC 6 - React em Prática
+
+#
