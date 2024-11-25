@@ -15,7 +15,7 @@ Após isso, o seu projeto irá ser criado.
 
 Como nosso projeto é baseado na compra de ingressos de um filme no cinema, tivemos que criar algumas coisas bem específicas, como os assentos, em que temos os assentos ocupados, os assentos livres e também os assentos selecionados(assentos que o comprador teria clicado). Tendo em mente que o tamanho dos assentos devem ser configurados, afim de não deixar com que fiquem grandes ou pequenos demais.
 
-Sendo todos os componentes usados no nosso projeto, sala(
+Sendo todos os componentes usados no nosso projeto, fila(sendo um conjunto de assentos, a sala(conjunto de filas), button(para emitir um alerta na compra) e por fim, simopse(contendo a sinopse do filme)
 
 Tivemos também que implementar uma função de alteração de página de clara para escura e vice versa, fizemos isso a partir da criação do código abaixo
 
@@ -29,7 +29,18 @@ if (window.matchMedia) {
 ```
 
 O código em questão funciona a partir da prefêrencia do usuário em relação ao tema claro/escuro(escolha feita no navegador), como mostrado na imagem abaixo.
+
 ![WhatsApp Image 2024-11-25 at 09 56 53](https://github.com/user-attachments/assets/a3ea5c3e-f01a-457e-afa4-1a73c919d05c)
+
+![WhatsApp Image 2024-11-25 at 10 12 43](https://github.com/user-attachments/assets/ade59f2b-9de2-4865-9a48-ee346e966873)
+
+
+Além de tudo isso, implementamos um design responsivo que só foi possível após a implementação 
+
+![WhatsApp Image 2024-11-25 at 10 17 31](https://github.com/user-attachments/assets/67dcdb18-bad5-4f57-a5f5-787ebe538444)
+
+![WhatsApp Image 2024-11-25 at 10 18 11](https://github.com/user-attachments/assets/3141eb36-7448-4022-9a70-e40b61a80693)
+
 
 
 3- Após configurar o projeto, é hora de ver se está como quer, para isso deve-se iniciar o código e ver como ficou o resultado final, para isso, digite o código abaixo no terminal do aplicativo de programação que está sendo usado
