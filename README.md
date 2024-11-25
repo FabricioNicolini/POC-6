@@ -93,6 +93,23 @@ ele no fila.js
 ```
 O page.js passa a função toggleSeat como prop para o componente Sala, que por sua vez repassa essa função para os componentes Fila, onde ela é usada nos eventos de clique.
 
+Em questão do sinopse.js, é um componente que não recebe props diretamente neste projeto, mas utiliza conteúdo estático, como por exemplo
+
+ele no page.js
+```css
+
+<Sinopse />
+
+```
+
+Ele no Sinopse.js
+```css
+
+<h3>Sinopse do filme</h3>
+<p>Descrição detalhada do filme...</p>
+
+```
+
 
 
 ### 2.2
