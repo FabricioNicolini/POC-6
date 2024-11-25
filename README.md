@@ -2,7 +2,8 @@
 
 # Passo a passo da criação do projeto
 
-1- A primeira coisa que você deve fazer ao pensar em criar um projeto como esse, é saber como criar um projeto em nextjs. Para isso, você deve ter nodejs instalado na sua máquina(computador), após isso, abra o prompt de comando, ou qualquer outro terminal de algum aplicativo de programação e insira os seguintes códigos.
+## 1.0
+A primeira coisa que você deve fazer ao pensar em criar um projeto como esse, é saber como criar um projeto em nextjs. Para isso, você deve ter nodejs instalado na sua máquina(computador), após isso, abra o prompt de comando, ou qualquer outro terminal de algum aplicativo de programação e insira os seguintes códigos.
 
   ```css
 npm install
@@ -11,7 +12,54 @@ npx create-next-app nome_do_seu_projeto
 ```
 Após isso, o seu projeto irá ser criado.
 
-2- Agora você deve começar a deixar o código da maneira que gostaria, utilizando css e js para a parte mais visual do seu site(presentes na pasta pages). Além disso, nesse projeto foi necessária à criação de alguns componetes que tornassem o site mais funcional, como a criação de botões, sendo uma das funcionalidades, a emissão de um alerta após o clique no mesmo. Porém, em relação aos componentes, eles devem ser criados na pasta componentes(independente da pasta page) e dentro dela haverá uma ou mais pastas, contendo cada uma, um componente diferente. 
+## 2.0
+Agora você deve começar a deixar o código da maneira que gostaria, utilizando css(como por exemplo flexbox) e js(que utiliza sintaxes de HTML 5) para a parte mais visual do seu site(presentes na pasta pages, principalmente no page.js e no global.css). Como mostrado abaixo
+
+exemplo de flexbox no global.css
+```css
+body {
+  display: flex;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0 auto; 
+  padding: 10px; 
+  height: 100vh; 
+  overflow: hidden;
+  justify-content: center;
+  
+}
+```
+
+exemplo de HTML 5 no page.js
+```css
+return (
+    <div className={styles.container}>
+      <header className={styles.Titulo}>
+        <div className={styles.tituloAForja}>
+          <h1>A forja</h1>
+        </div>
+        <div className={styles.Hora}>
+          <p>16:40</p>
+        </div>
+      </header>
+      <main className={styles.main}>
+        <div className={styles.sala}>
+          <Sala toggleSeat={toggleSeat} />
+        </div>
+        <Sinopse />
+      </main>
+      <Botao totalPrice={totalPrice} />
+    </div>
+  );
+```
+
+
+### 2.1
+Além disso, nesse projeto foi necessária à criação de alguns componetes que tornassem o site mais funcional, como a criação de botões, sendo uma das funcionalidades, a emissão de um alerta após o clique no mesmo. Porém, em relação aos componentes, eles devem ser criados na pasta componentes(independente da pasta page) e dentro dela haverá uma ou mais pastas, contendo cada uma, um componente diferente. 
 
 Como nosso projeto é baseado na compra de ingressos de um filme no cinema, tivemos que criar algumas coisas bem específicas, como os assentos, em que temos os assentos indisponíveis, os assentos livres e também os assentos selecionados(assentos que o comprador teria clicado). Tendo em mente que o tamanho dos assentos devem ser configurados, afim de não deixar com que fiquem grandes ou pequenos demais.
 
@@ -22,6 +70,7 @@ Como na imagem abaixo
 
 Sendo todos os componentes usados no nosso projeto, fila(sendo um conjunto de assentos), a sala(conjunto de filas), button(para emitir um alerta de compra e calcular o valor total da mesma) e por fim, sinopse(contendo a sinopse do filme, que se adequa ao Media Query)
 
+### 2.2
 Tivemos também que implementar uma função de alteração de página de clara para escura e vice versa, fizemos isso a partir da criação do código abaixo
 
 ```css
@@ -52,6 +101,7 @@ O código em questão funciona a partir da prefêrencia do usuário em relação
 ![WhatsApp Image 2024-11-25 at 10 12 43](https://github.com/user-attachments/assets/ade59f2b-9de2-4865-9a48-ee346e966873)
 
 
+### 2.3
 Além de tudo isso, implementamos um design responsivo que só foi possível após a implementação dos códigos
 
 ```css
@@ -109,7 +159,8 @@ Tendo como resultado final as imagens abaixo
 
 
 
-3- Após configurar o projeto, é hora de ver se está como quer, para isso deve-se iniciar o código e ver como ficou o resultado final, para isso, digite o código abaixo no terminal do aplicativo de programação que está sendo usado
+## 3.0 
+Após configurar o projeto, é hora de ver se está como quer, para isso deve-se iniciar o código e ver como ficou o resultado final, para isso, digite o código abaixo no terminal do aplicativo de programação que está sendo usado
 
 ```css
 
