@@ -68,7 +68,32 @@ Como na imagem abaixo
 ![WhatsApp Image 2024-11-25 at 10 28 24](https://github.com/user-attachments/assets/ad4ab4a3-9a4a-45d0-ab2b-1925db500639)
 
 
-Sendo todos os componentes usados no nosso projeto, fila(sendo um conjunto de assentos), a sala(conjunto de filas), button(para emitir um alerta de compra e calcular o valor total da mesma) e por fim, sinopse(contendo a sinopse do filme, que se adequa ao Media Query)
+Sendo todos os componentes usados no nosso projeto, fila(sendo um conjunto de assentos), a sala(conjunto de filas), button(para emitir um alerta de compra e calcular o valor total da mesma) e por fim, sinopse(contendo a sinopse do filme, que se adequa ao Media Query). 
+
+Suas passagens de parâmetro sendo eles, o toggleSeat, que foi definido no componente pai page.js para gerenciar os estados dos assentos selecionados.
+
+ele no page.js
+```css
+
+<Sala toggleSeat={toggleSeat} />
+
+```
+
+ele no sala.js
+```css
+
+<Fila toggleSeat={toggleSeat} />
+
+```
+ele no fila.js
+```css
+
+<const branco = <div className={styles.AcentoBranco} onClick={(e) => toggleSeat(e.target)}></div>;
+
+```
+O page.js passa a função toggleSeat como prop para o componente Sala, que por sua vez repassa essa função para os componentes Fila, onde ela é usada nos eventos de clique.
+
+
 
 ### 2.2
 Tivemos também que implementar uma função de alteração de página de clara para escura e vice versa, fizemos isso a partir da criação do código abaixo
