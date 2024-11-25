@@ -197,7 +197,7 @@ Tendo como resultado final as imagens abaixo
 
 ![WhatsApp Image 2024-11-25 at 10 17 31](https://github.com/user-attachments/assets/67dcdb18-bad5-4f57-a5f5-787ebe538444)
 
-![WhatsApp Image 2024-11-25 at 10 18 11](https://github.com/user-attachments/assets/3141eb36-7448-4022-9a70-e40b61a80693)
+![WhatsApp Image 2024-11-25 at 10 56 42](https://github.com/user-attachments/assets/85cb668f-3480-49e7-8736-1b7a1b59c0ff)
 
 
 
