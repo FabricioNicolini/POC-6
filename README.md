@@ -15,6 +15,8 @@ Após isso, o seu projeto irá ser criado.
 
 Como nosso projeto é baseado na compra de ingressos de um filme no cinema, tivemos que criar algumas coisas bem específicas, como os assentos, em que temos os assentos ocupados, os assentos livres e também os assentos selecionados(assentos que o comprador teria clicado). Tendo em mente que o tamanho dos assentos devem ser configurados, afim de não deixar com que fiquem grandes ou pequenos demais.
 
+Sendo todos os componentes usados no nosso projeto, sala(
+
 Tivemos também que implementar uma função de alteração de página de clara para escura e vice versa, fizemos isso a partir da criação do código abaixo
 
 ```css
