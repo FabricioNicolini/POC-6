@@ -11,5 +11,24 @@ npx create-next-app nome_do_seu_projeto
 ```
 Após isso, o seu projeto irá ser criado.
 
-2- Agora você deve começar a deixar o código da maneira que gostaria, utilizando css e js para a parte mais visual do seu site(estaram presentes na pasta pages). Além disso, nesse projeto foi necessária à criação de alguns componetes que tornassem o site mais funcional, como a criação de botões, sendo uma das funcionalidades, a emissão de um alerta após o clique no mesmo. Porém, em relação aos componentes, eles devem ser criados na pasta componentes(independente da pasta page) e dentro dela haverá uma ou mais pastas, contendo cada uma, um componente diferente. 
+2- Agora você deve começar a deixar o código da maneira que gostaria, utilizando css e js para a parte mais visual do seu site(presentes na pasta pages). Além disso, nesse projeto foi necessária à criação de alguns componetes que tornassem o site mais funcional, como a criação de botões, sendo uma das funcionalidades, a emissão de um alerta após o clique no mesmo. Porém, em relação aos componentes, eles devem ser criados na pasta componentes(independente da pasta page) e dentro dela haverá uma ou mais pastas, contendo cada uma, um componente diferente. 
+
+Como nosso projeto é baseado na compra de ingressos de um filme no cinema, tivemos que criar algumas coisas bem específicas, como os assentos, em que temos os assentos ocupados, os assentos livres e também os assentos selecionados(assentos que o comprador teria clicado). Tendo em mente que o tamanho dos assentos devem ser configurados, afim de não deixar com que fiquem grandes ou pequenos demais.
+
+Tivemos também que implementar uma função de alteração de página de clara para escura e vice versa, fizemos isso a partir da criação do código abaixo
+
+```css
+
+if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyColorScheme);
+    window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', applyColorScheme);
+  }
+
+```
+
+O código em questão funciona a partir da prefêrencia do usuário em relação ao tema claro/escuro(escolha feita no navegador)
+![WhatsApp Image 2024-11-25 at 09 56 53](https://github.com/user-attachments/assets/a3ea5c3e-f01a-457e-afa4-1a73c919d05c)
+
+
+3- Após configurar
 
