@@ -26,9 +26,24 @@ if (window.matchMedia) {
 
 ```
 
-O código em questão funciona a partir da prefêrencia do usuário em relação ao tema claro/escuro(escolha feita no navegador)
+O código em questão funciona a partir da prefêrencia do usuário em relação ao tema claro/escuro(escolha feita no navegador), como mostrado na imagem abaixo.
 ![WhatsApp Image 2024-11-25 at 09 56 53](https://github.com/user-attachments/assets/a3ea5c3e-f01a-457e-afa4-1a73c919d05c)
 
 
-3- Após configurar
+3- Após configurar o projeto, é hora de ver se está como quer, para isso deve dar run no código e ver como ficou o resultado final, para isso se deve usar um código no terminal do aplicativo de programção sendo esse código 
+
+```css
+
+npm run dev
+
+```
+
+Esse código ira retornar um link que será o local em que o seu projeto ficará visível, além de que terá atualizações em tempo real caso seja feita alguma alteração no código(alteração será feita ao salvar), sem precisar atualizar a página, sendo o link padrão,
+
+```css
+
+http://localhost:3000
+
+```
+podendo ocorrer algumas alterações no mesmo, caso o 3000 esteja em uso, sendo o próximo o 3001, assim por diante
 
