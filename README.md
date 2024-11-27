@@ -90,7 +90,7 @@ ele no fileira.js
 <const branco = <div className={styles.AcentoBranco} onClick={(e) => toggleSeat(e.target)}></div>;
 
 ```
-O page.js passa a função toggleSeat como prop para o componente Sala, que por sua vez repassa essa função para os componentes Fila, onde ela é usada nos eventos de clique.
+O page.js passa a função toggleSeat como prop para o componente Sala, que por sua vez repassa essa função para os componentes Fileira, onde ela é usada nos eventos de clique.
 
 Em questão do sinopse.js, é um componente que não recebe props diretamente neste projeto, mas utiliza conteúdo estático, como por exemplo
 
