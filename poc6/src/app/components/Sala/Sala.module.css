@@ -1,0 +1,74 @@
+.container_filas {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.AcentoCinzaTela {
+    width: 190px;
+    height: 20px;
+    margin: 2px;
+    display: inline-block;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color: #505050;
+}
+
+@media (prefers-color-scheme: dark) {
+    .AcentoCinzaTela {
+      background-color: #505050;
+    }
+  }
+  
+.AcentoBrancoBOLINHA,
+.AcentoCinzaBOLINHA,
+.AcentoVermelhoBOLINHA {
+    width: 25%;
+    height: 32%;
+    margin: 2px;
+    border-radius: 40px;
+}
+
+
+
+.legenda {
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.status {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container_filas {
+        width: 100%;
+    }
+
+    .status {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .legenda {
+        width: 100%;
+    }
+
+    .AcentoBrancoBOLINHA,
+    .AcentoCinzaBOLINHA,
+    .AcentoVermelhoBOLINHA {
+        width: 45%;
+        height: 40%;
+        margin: 2px;
+        border-radius: 40px;
+    }
+}

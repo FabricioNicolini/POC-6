@@ -1,0 +1,26 @@
+.botao {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.botao button {
+  background-color: #db3d2e;
+  color: #f0f0f0;
+  border-radius: 19px;
+  font-family: 'Arial', sans-serif;
+  width: 400px;
+  height: 76px;
+}
+
+.Comprar,
+.Preco {
+  font-size: 1.3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .botao button {
+    background-color: #cd4a3e;
+    color: #f0f0f0;
+  }
+}

@@ -1,0 +1,80 @@
+.titlePage,
+.Hora {
+  text-align: center;
+  
+}
+
+.Hora {
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 27px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60vw;
+}
+
+.Title {
+  width: 100%;
+  height: 10%;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70%;
+}
+
+.sala {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+
+  .sala {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.screenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.screen {
+  width: 80%;
+  height: 30px;
+  background-color: #d3d3d3;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.screenLabel {
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+  text-align: center;
+}
+
+.salaScreenContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
